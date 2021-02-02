@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import "../Style/Header.css";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class Header extends Component{
   render(){
     return(
+        <Router>
       <div id="head">
         <table style={{ width:"100%"}}>
           <tbody>
@@ -20,10 +21,14 @@ class Header extends Component{
                     <Link to="/menu_makanan" className="link"> Menu Makanan </Link>
                   </h2>
                 </td>
-
                 <td>
                   <h2>
                     <Link to="/menu_minuman" className="link"> Menu Minuman </Link>
+                  </h2>
+                </td>
+                <td>
+                  <h2>
+                    <Link to="/kontak" className="link">Kontak</Link>
                   </h2>
                 </td>
               </center>
@@ -31,6 +36,7 @@ class Header extends Component{
           </tbody>
         </table>
       </div>
+      </Router>
     );
   }
 }
