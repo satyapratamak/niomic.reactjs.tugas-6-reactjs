@@ -1,42 +1,45 @@
 import React, {Component} from "react";
 import "../Style/Header.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+//import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Header extends Component{
   render(){
     return(
-        <Router>
-      <div id="head">
-        <table style={{ width:"100%"}}>
-          <tbody>
-            <tr>
-              <center>
-                <td>
-                  <h2>
-                    <Link to="/" className="link"> Home </Link>
-                  </h2>
-                </td>
-                <td>
-                  <h2>
-                    <Link to="/menu_makanan" className="link"> Menu Makanan </Link>
-                  </h2>
-                </td>
-                <td>
-                  <h2>
-                    <Link to="/menu_minuman" className="link"> Menu Minuman </Link>
-                  </h2>
-                </td>
-                <td>
-                  <h2>
-                    <Link to="/kontak" className="link">Kontak</Link>
-                  </h2>
-                </td>
-              </center>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </Router>
+
+        <div id="head">
+          <table style={{ width:"100%"}}>
+            <tbody>
+              <tr>
+                <center>
+                  <nav>
+                  <td>
+                    <h2>
+                      <Link to="/" className="link"> Home </Link>
+                    </h2>
+                  </td>
+                  <td>
+                    <h2>
+                      <Link to="/menu_makanan" className="link"> Menu Makanan </Link>
+                    </h2>
+                  </td>
+                  <td>
+                    <h2>
+                      <Link to="/menu_minuman" className="link"> Menu Minuman </Link>
+                    </h2>
+                  </td>
+                  <td>
+                    <h2>
+                      <Link to="/kontak" className="link">Kontak</Link>
+                    </h2>
+                  </td>
+                  </nav>
+                </center>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
     );
   }
 }

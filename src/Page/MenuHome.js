@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import Header from "./Header";
+
 import "../Style/Header.css";
 
 
@@ -16,6 +17,9 @@ class MenuHome extends Component{
         <div className="image_header">
           <br />
         </div>
+        <br />
+
+
       </div>
     );
   }

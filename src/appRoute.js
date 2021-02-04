@@ -6,7 +6,7 @@ import MenuMinuman from "./Page/MenuMinuman";
 import Kontak from "./Page/Kontak";
 
 
-const appRoute = () => (
+const AppRoute = () => (
   <Router>
     <div>
       <Route path="/" exact component={App} />
@@ -17,4 +17,4 @@ const appRoute = () => (
   </Router>
 );
 
-export default appRoute;
+export default AppRoute;
